@@ -10,7 +10,7 @@ HOW TO INSTALL
 
 1. Check out from github
 
-        $ git clone https://github.com/vgod/vimrc ~/.vim
+        $ git clone https://github.com/COLDTURNIP/vimrc ~/.vim
         $ cd ~/.vim
         $ git submodule update --init
 
