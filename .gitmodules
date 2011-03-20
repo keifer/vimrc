@@ -34,3 +34,6 @@
 [submodule "bundle/javacomplete"]
 	path = bundle/javacomplete
 	url = https://github.com/vim-scripts/javacomplete
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = git://github.com/Shougo/neocomplcache.git
