@@ -395,12 +395,6 @@ endfun
 "}
 
 
-"" --- edit Python in VIM {
-"  " Please install Python compiler before using this command
-"  autocmd BufRead *.py    map <F9> :!python %<CR>
-""}
-"
-"
 "" --- TagList {
 "  let Tlist_Ctags_Cmd = 'ctags'
 "  nnoremap <F12> :TlistToggle<CR>
@@ -507,22 +501,27 @@ endfun
 "  "nmap <F6> :TrinityToggleTagList<CR> " duplicated
 "  nmap <F7> :TrinityToggleNERDTree<CR>
 ""}
-"
-"
-"" --- C/C++ specific settings {
-"autocmd FileType c,cpp,cc  set cindent comments=sr:/*,mb:*,el:*/,:// cino=>s,e0,n0,f0,{0,}0,^-1s,:0,=s,g0,h1s,p2,t0,+2,(2,)20,*30
-""}
-"
-"
-"" --- vala support {
-"  autocmd BufRead,BufNewFile *.vala setfiletype vala
-"  autocmd BufRead,BufNewFile *.vapi setfiletype vala
-"  autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-"  autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-""}
-"
-"" --- Go support {
-"  autocmd BufRead,BufNewFile *.go setfiletype go
-""}
-"
-"
+
+
+" --- Python programming settings {
+  " Please install Python compiler before using this command
+  autocmd BufRead *.py    map <F9> :!python %<CR>
+"}
+
+
+" --- C/C++ programming settings {
+autocmd FileType c,cpp,cc  set cindent comments=sr:/*,mb:*,el:*/,:// cino=>s,e0,n0,f0,{0,}0,^-1s,:0,=s,g0,h1s,p2,t0,+2,(2,)20,*30
+"}
+
+
+" --- vala programming settings {
+  autocmd BufRead,BufNewFile *.vala setfiletype vala
+  autocmd BufRead,BufNewFile *.vapi setfiletype vala
+  autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+  autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
+"}
+
+" --- Go programming settings {
+  autocmd BufRead,BufNewFile *.go setfiletype go
+"}
+
