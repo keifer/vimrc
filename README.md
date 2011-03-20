@@ -1,8 +1,9 @@
-vgod's vimrc
+Raphanus's vimrc
 ============
-Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+Creator: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+Modifier: Raphanus Lo
 
-Fork me on GITHUB  https://github.com/vgod/vimrc.
+Fork me on GITHUB  https://github.com/COLDTURNIP/vimrc.
 
 HOW TO INSTALL
 --------------
@@ -22,6 +23,17 @@ HOW TO INSTALL
         $ cd .vim/bundle/command-t/ruby/command-t
         $ ruby extconf.rb
         $ make
+
+If you have some problem when updating submodule, such as
+
+        $ git submodule update
+        fatal: reference is not a tree: 2d7cfbd09fc96c04c4c41148d44ed7778add6b43
+        Unable to checkout '2d7cfbd09fc96c04c4c41148d44ed7778add6b43' in submodule path 'mysubmodule'
+
+then you may need to roll-back your parent repository and re-update submodules
+to solve it. There's a good tutorial to solve such problems:
+
+* [Stackoverflow: Git submodule head](http://stackoverflow.com/questions/2155887/git-submodule-head)
   
 UPGRADE PLUGIN BUNDLES
 ----------------------
