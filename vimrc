@@ -485,14 +485,14 @@ endfun
 "  "    endif
 "  "endif
 ""}
-"
-"
-"" --- Trinity {
-"  nmap <F4> :TrinityToggleAll<CR> 
-"  nmap <F5> :TrinityToggleSourceExplorer<CR> 
-"  "nmap <F6> :TrinityToggleTagList<CR> " duplicated
-"  nmap <F7> :TrinityToggleNERDTree<CR>
-""}
+
+
+" --- Trinity {
+  nmap <F4> :TrinityToggleAll<CR> 
+  nmap <F5> :TrinityToggleSourceExplorer<CR> 
+  "nmap <F6> :TrinityToggleTagList<CR> " duplicated
+  nmap <F7> :TrinityToggleNERDTree<CR>
+"}
 
 
 " --- Python programming settings {
