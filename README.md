@@ -1,6 +1,7 @@
 Raphanus's vimrc
 ============
 Creator: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+
 Modifier: Raphanus Lo
 
 Fork me on GITHUB  https://github.com/COLDTURNIP/vimrc.
@@ -64,12 +65,6 @@ PLUGINS
 
 * [Command-T](https://github.com/wincent/Command-T): open and navigate between files with `cmd-t`.
   
-* [SuperTab](http://www.vim.org/scripts/script.php?script_id=1643): Do all your insert-mode completion with Tab.
-
-* [snipMate](http://www.vim.org/scripts/script.php?script_id=2540): TextMate-style snippets for Vim
-
-  `:help snipMate` to see more info.
-
 * [YankRing](http://www.vim.org/scripts/script.php?script_id=1234): Maintains a history of previous yanks, changes and deletes 
   
   `:help yankring` to see more info.
@@ -86,6 +81,14 @@ PLUGINS
 * [OmniCppComplete](http://www.vim.org/scripts/script.php?script_id=1520): C/C++ omni-completion with ctags database.
 
 * [JavaComplete](http://www.vim.org/scripts/script.php?script_id=1785): Java Omni-completion.
+
+* [neocomplcache](http://www.vim.org/scripts/script.php?script_id=2620): great completion by making a cache of keyword in buffer.
+
+* [taglist](http://www.vim.org/scripts/script.php?script_id=273): list definitions in current source file.
+
+* [Source Explorer](http://www.vim.org/scripts/script.php?script_id=2179): a source code explorer provides an overview of the function and type definitions.
+
+* [trinity](http://www.vim.org/scripts/script.php?script_id=2347): an IDE manager to control the three plugins open and close: taglist, Source Explorer, and [NERD tree](http://www.vim.org/scripts/script.php?script_id=1658).
 
 
 Language specific supports
