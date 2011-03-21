@@ -219,8 +219,8 @@ nnoremap <C-]> <C-]>zz
 " PROGRAMMING SHORTCUTS
 "---------------------------------------------------------------------------
 
-" Ctrl-[ jump out of the tag stack (undo Ctrl-])
-map <C-[> <ESC>:po<CR>
+" Ctrl-[ push tag back to stack (undo Ctrl-t)
+map <C-[> <ESC>:tag<CR>
 
 " ,g generates the header guard
 map <leader>g :call IncludeGuard()<CR>
