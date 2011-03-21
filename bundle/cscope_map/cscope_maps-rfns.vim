@@ -20,6 +20,10 @@
 "
 " Happy cscoping,
 "
+" Raphanus: To get the original version of cscope_map, please visit the
+" official website http://www.vim.org/scripts/script.php?script_id=51
+" , or the mirror in GitHub https://github.com/vim-scripts/cscope_macros.vim
+"
 " Creator:  Jason Duell      jduell@alumni.princeton.edu     2002/3/7
 " Modifier: Raphanus Lo      coldturnip@gmail.com            2011/3/22
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
