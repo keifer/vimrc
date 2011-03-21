@@ -196,16 +196,8 @@ cnoremap <C-A>      <Home>
 cnoremap <C-E>      <End>
 cnoremap <C-K>      <C-U>
 
-" <leader>p toggles paste mode {
-nmap <leader>p :call TogglePaste()<CR>
-function! TogglePaste()
-    if &paste
-      set nopaste
-    else
-      set paste
-    endif
-endfunction
-"}
+" <leader>p toggles paste mode
+nmap <leader>p :set paste!<Bar>set paste?<CR>
 
 " allow multiple indentation/deindentation in visual mode
 vnoremap < <gv
