@@ -395,54 +395,54 @@ endfun
 "}
 
 
-"" --- TagList {
-"  let Tlist_Ctags_Cmd = 'ctags'
-"  nnoremap <F12> :TlistToggle<CR>
-"  autocmd BufWritePost *.rb   :TlistUpdate
-"  autocmd BufWritePost *.py   :TlistUpdate
-"  autocmd BufWritePost *.c    :TlistUpdate
-"  autocmd BufWritePost *.cpp  :TlistUpdate
-"  autocmd BufWritePost *.java :TlistUpdate
-"  " Displaying tags for only one file~
-"  let Tlist_Show_One_File = 1
-"  " if you are the last, kill yourself
-"  let Tlist_Exist_OnlyWindow = 1
-"  " split to the right side of the screen
-"  let Tlist_Use_Right_Window = 0
-"  " sort by order or name
-"  let Tlist_Sort_Type = "order"
-"  " do not show prototypes and not tags in the taglist window.
-"  let Tlist_Display_Prototype = 0
-"  " Remove extra information and blank lines from the taglist window.
-"  let Tlist_Compart_Format = 0
-"  " Jump to taglist window on open.
-"  let Tlist_GainFocus_On_ToggleOpen = 0
-"  " Show tag scope next to the tag name.
-"  let Tlist_Display_Tag_Scope = 1
-"  " Close the taglist window when a file or tag is selected.
-"  let Tlist_Close_On_Select = 0
-"  " Don't Show the fold indicator column in the taglist window.
-"  let Tlist_Enable_Fold_Column = 0
-"  "let Tlist_WinWidth = 40
-""}
-"
-"
-"" --- Source Explorer {
-"  "nmap <F5> :SrcExplToggle<CR>
-"  let g:SrcExpl_winHeight = 8
-"  let g:SrcExpl_jumpKey = "<ENTER>"
-"  let g:SrcExpl_pluginList = [ 
-"          \ "__Tag_List__", 
-"          \ "_NERD_tree_", 
-"          \ "Source_Explorer" 
-"          \ ]
-"  let g:SrcExpl_searchLocalDef = 1
-"  let g:SrcExpl_isUpdateTags = 1
-"  "let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ." 
-"  "let g:SrcExpl_updateTagsKey = "<F12>" 
-""}
-"
-"
+" --- TagList {
+  let Tlist_Ctags_Cmd = 'ctags'
+  nnoremap <F12> :TlistToggle<CR>
+  autocmd BufWritePost *.rb   :TlistUpdate
+  autocmd BufWritePost *.py   :TlistUpdate
+  autocmd BufWritePost *.c    :TlistUpdate
+  autocmd BufWritePost *.cpp  :TlistUpdate
+  autocmd BufWritePost *.java :TlistUpdate
+  " Displaying tags for only one file~
+  let Tlist_Show_One_File = 1
+  " if you are the last, kill yourself
+  let Tlist_Exist_OnlyWindow = 1
+  " split to the right side of the screen
+  let Tlist_Use_Right_Window = 0
+  " sort by order or name
+  let Tlist_Sort_Type = "order"
+  " do not show prototypes and not tags in the taglist window.
+  let Tlist_Display_Prototype = 0
+  " Remove extra information and blank lines from the taglist window.
+  let Tlist_Compart_Format = 0
+  " Jump to taglist window on open.
+  let Tlist_GainFocus_On_ToggleOpen = 0
+  " Show tag scope next to the tag name.
+  let Tlist_Display_Tag_Scope = 1
+  " Close the taglist window when a file or tag is selected.
+  let Tlist_Close_On_Select = 0
+  " Don't Show the fold indicator column in the taglist window.
+  let Tlist_Enable_Fold_Column = 0
+  "let Tlist_WinWidth = 40
+"}
+
+
+" --- Source Explorer {
+  "nmap <F5> :SrcExplToggle<CR>
+  let g:SrcExpl_winHeight = 8
+  let g:SrcExpl_jumpKey = "<ENTER>"
+  let g:SrcExpl_pluginList = [ 
+          \ "__Tag_List__", 
+          \ "_NERD_tree_", 
+          \ "Source_Explorer" 
+          \ ]
+  let g:SrcExpl_searchLocalDef = 1
+  let g:SrcExpl_isUpdateTags = 1
+  "let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ." 
+  "let g:SrcExpl_updateTagsKey = "<F12>" 
+"}
+
+
 "" --- Cscope {
 "  if has("cscope")
 "    set csto=1
