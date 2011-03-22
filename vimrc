@@ -36,12 +36,26 @@ set cursorcolumn      " highlight current column
 if has("gui_running")   " GUI color and font settings
   set background=dark
   "set t_Co=256          " 256 color mode
-  set gfn=Monospace\ 9
-  set gfw=
   "colorscheme native
   "colorscheme ir_black
   colorscheme wombat
   "colorscheme moria
+
+  " font settings {
+    if has("win32") || has("win64")
+      set gfn=Inconsolata:h11
+      set gfw=MinLiU:h11
+    elseif has("unix")
+      let s:uname = substitute(system("uname -s"), "\n", "", "")
+      if (match(s:uname, 'Linux') >= 0)
+        set gfn=Monospace\ 9
+        set gfw=
+      elseif (match(s:uname, 'Darwin') >= 0)
+        set gfn=Monaco:h10
+        set gfw=
+      endif
+    endif
+  "}
 else
 " terminal color settings
   set t_Co=256          " 256 color mode
