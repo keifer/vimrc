@@ -33,7 +33,7 @@
 	url = https://github.com/vim-scripts/javacomplete
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
-	url = git://github.com/Shougo/neocomplcache.git
+	url = https://github.com/Shougo/neocomplcache.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
