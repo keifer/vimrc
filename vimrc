@@ -416,7 +416,7 @@ endfun
   " split to the right side of the screen
   let Tlist_Use_Right_Window = 0
   " sort by order or name
-  let Tlist_Sort_Type = "order"
+  let Tlist_Sort_Type = "name"
   " do not show prototypes and not tags in the taglist window.
   let Tlist_Display_Prototype = 0
   " Remove extra information and blank lines from the taglist window.
