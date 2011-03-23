@@ -202,8 +202,8 @@ map <C-t><C-t> :tabnew<CR>
 " close tab
 map <C-t><C-w> :tabclose<CR>
 
-" Ctrl-l turn off search highlighting
-nnoremap <silent> <C-l> :nohl<CR><C-l>
+" Ctrl-m turn off search highlighting
+nnoremap <silent> <C-m> :nohl<CR>
 
 " Bash like keys for the command line
 cnoremap <C-A>      <Home>
