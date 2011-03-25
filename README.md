@@ -1,3 +1,8 @@
+" Keifer Lee's vimrc
+" Fork me on GITHUB  https://github.com/keifer/vimrc
+" Modified Raphanus's vimrc
+" read https://github.com/keifer/vimrc/blob/master/README.txt for more info
+
 Raphanus's vimrc
 ============
 Creator: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
