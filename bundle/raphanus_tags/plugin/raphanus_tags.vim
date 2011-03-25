@@ -16,7 +16,7 @@ if has("cscope")
     if filereadable(mytagpath."/cscope.out")
       cs add mytagpath."/cscope.out ".mysrctop
     endif
-  else
+  endif
 endif
 "}
 
