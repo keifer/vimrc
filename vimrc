@@ -503,7 +503,7 @@ endfun
 
 " --- Trinity {
   nmap <F4> :TrinityToggleAll<CR> 
-  nmap <F5> :TrinityToggleSourceExplorer<CR> 
+  nmap <F5> :set hls<Bar>TrinityToggleSourceExplorer<CR> 
   "nmap <F6> :TrinityToggleTagList<CR> " duplicated
   nmap <F7> :TrinityToggleNERDTree<CR>
 "}
