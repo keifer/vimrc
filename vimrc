@@ -234,7 +234,7 @@ nnoremap <C-]> <C-]>zz
 "---------------------------------------------------------------------------
 
 " Ctrl-[ push tag back to stack (undo Ctrl-t)
-map <C-[> <ESC>:tag<CR>
+noremap <leader><C-]> <ESC>:tag<CR>
 
 " ,g generates the header guard
 map <leader>g :call IncludeGuard()<CR>
