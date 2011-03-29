@@ -1,3 +1,8 @@
+" Keifer Lee's vimrc
+" Fork me on GITHUB  https://github.com/keifer/vimrc
+" Modify Raphanus's vimrc
+" read https://github.com/keifer/vimrc/blob/master/README.txt for more info
+"
 " Raphanus's vimrc
 " Yun-Chang Lo
 " Fork me on GITHUB  https://github.com/COLDTURNIP/vimrc
@@ -11,10 +16,10 @@ call pathogen#helptags()
 
 " General Settings
 
-set nocompatible " not compatible with the old-fashion vi mode
+"set nocompatible " not compatible with the old-fashion vi mode
 set bs=2         " allow backspacing over everything in insert mode
 set history=50   " keep 50 lines of command line history
-set number       " show line number in default
+"set number       " show line number in default
 set ruler        " show the cursor position all the time
 set autoread     " auto read when file is changed from outside
 
@@ -87,7 +92,7 @@ set smartindent              " smart indentation
 set cindent                  " C-style indentation
 set incsearch                " incremental search
 set nobackup                 " no *~ backup files
-set directory=$HOME/.vimswp  " move .swp files to specific directory
+"set directory=$HOME/.vimswp  " move .swp files to specific directory
 set copyindent               " copy the previous indentation on autoindenting
 set ignorecase               " ignore case when searching
 set smartcase                " ignore case if search pattern is all lowercase,case-sensitive otherwise
@@ -95,8 +100,8 @@ set smarttab                 " insert tabs on the start of a line according to c
 
 " disable sound on errors
 set noerrorbells
-set novisualbell
-set t_vb=
+"set novisualbell
+"set t_vb=
 set tm=500
 
 " indentation and TAB setting{
@@ -234,7 +239,7 @@ nnoremap <C-]> <C-]>zz
 "---------------------------------------------------------------------------
 
 " Ctrl-[ push tag back to stack (undo Ctrl-t)
-noremap <leader><C-]> <ESC>:tag<CR>
+"noremap <leader><C-]> <ESC>:tag<CR>
 
 " ,g generates the header guard
 map <leader>g :call IncludeGuard()<CR>
@@ -316,15 +321,15 @@ endfun
 " fixed the arrow key problems caused by AutoClose
   if !has("gui_running")
     "set term=linux
-    imap OA <ESC>ki
-    imap OB <ESC>ji
-    imap OC <ESC>li
-    imap OD <ESC>hi
+    "imap OA <ESC>ki
+    "imap OB <ESC>ji
+    "imap OC <ESC>li
+    "imap OD <ESC>hi
   
-    nmap OA k
-    nmap OB j
-    nmap OC l
-    nmap OD h
+    "nmap OA k
+    "nmap OB j
+    "nmap OC l
+    "nmap OD h
   endif
 "}
 
