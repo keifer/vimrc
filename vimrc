@@ -122,9 +122,9 @@ set tm=500
   "  * sw: set width (for indent).
   "  * ts: tabstop, the width of tab.
   "  * sts: soft tab stop, the width of tab. this set is related to how
-  au FileType bash,css,html,javascript,lua,python,perl,ruby,shell,vim,xml set ai sw=2 ts=2 sts=2
+  au FileType bash,css,html,javascript,lua,python,perl,ruby,shell,vim set ai sw=2 ts=2 sts=2
   au FileType Makefile set ai sw=4 ts=4 sts=4 noet
-  au FileType c,cc,cpp,go,java,vala set ai sw=4 ts=4 sts=4
+  au FileType c,cc,cpp,go,java,vala,xml set ai sw=4 ts=4 sts=4
   au FileType go set ai sw=4 ts=4 sts=4 noet
 "}
 
@@ -536,3 +536,14 @@ autocmd FileType c,cpp,cc  set cindent comments=sr:/*,mb:*,el:*/,:// cino=>s,e0,
   autocmd BufRead,BufNewFile *.go setfiletype go
 "}
 
+" --- keifer_lee extra preferences ---
+
+" --- highlight whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+set tags=/home/keifer_lee/source/kb60_froyo2/tags
